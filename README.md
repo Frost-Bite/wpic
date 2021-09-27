@@ -8,6 +8,7 @@ Installation:
 - Activate Bridge plugin
 - Add code to header.php from bridge-ipb4-wp/readme.txt
 - Activate Comments plugin
+- Install wpic-connect.tar to IC applications for sends emails about replies to comments in WP through the IC mail system
 - Read readme files for additional steps
 
 Known issues:
