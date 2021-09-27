@@ -1,0 +1,33 @@
+Плагин не выводит комментарий, если у записи менее 2-х комментариев и если нет ни одного комментария с рейтингом >= 2
+
+В месте, где должен выводиться комментарий необходимо вставить <?php wicShowTopComment() ?>
+Например, в index.php
+
+<p class="post-meta">
+    <span class="post-date"><?php the_time('d.m.Y'); ?></span> <span class="post-category"><?php the_category(', ', 'multiple' ); ?></span>
+    <?php wicShowTopComment() ?>
+</p>
+
+-------------------------------------------------------------
+
+В style.css шаблона необходимо добавить
+
+#lenta .top-comment .time {
+    color: #A4A4A4;
+}
+#lenta .top-comment .author {
+    font-weight: bold;
+}
+
+#lenta .top-comment .text a {
+    color: #006AA8;
+}
+
+#lenta .top-comment .photo img {
+    float: none !important;
+    height: 15px;
+    margin: 0;
+    position: relative;
+    top: 6px;
+    width: 15px;
+}
